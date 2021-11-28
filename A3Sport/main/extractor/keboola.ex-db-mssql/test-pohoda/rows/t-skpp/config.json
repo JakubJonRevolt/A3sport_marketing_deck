@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "columns": [],
+    "primaryKey": [
+      "ID"
+    ],
+    "incremental": false,
+    "outputTable": "in.c-keboola-ex-db-mssql-1707059565.t-skpp",
+    "table": {
+      "schema": "dbo",
+      "tableName": "tSKPP"
+    }
+  }
+}

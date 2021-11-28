@@ -1,0 +1,116 @@
+{
+  "version": 2,
+  "project": {
+    "id": 5229,
+    "apiHost": "connection.north-europe.azure.keboola.com"
+  },
+  "sortBy": "id",
+  "naming": {
+    "branch": "{branch_name}",
+    "config": "{component_type}/{component_id}/{config_name}",
+    "configRow": "rows/{config_row_name}",
+    "schedulerConfig": "schedules/{config_name}",
+    "sharedCodeConfig": "_shared/{target_component_id}",
+    "sharedCodeConfigRow": "codes/{config_row_name}",
+    "variablesConfig": "variables",
+    "variablesValuesRow": "values/{config_row_name}"
+  },
+  "allowedBranches": [
+    "__all__"
+  ],
+  "ignoredComponents": [],
+  "branches": [
+    {
+      "id": 8887,
+      "path": "main"
+    }
+  ],
+  "configurations": [
+    {
+      "branchId": 8887,
+      "componentId": "kds-team.ex-cj-affiliate",
+      "id": "168526925",
+      "path": "extractor/kds-team.ex-cj-affiliate/cj-aff-template",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.csv-import",
+      "id": "241126936",
+      "path": "extractor/keboola.csv-import/customer-data-manual-import",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-currency",
+      "id": "167087005",
+      "path": "extractor/keboola.ex-currency/exchange-rates",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-db-mssql",
+      "id": "1707059565",
+      "path": "extractor/keboola.ex-db-mssql/test-pohoda",
+      "rows": [
+        {
+          "id": "15624",
+          "path": "rows/ad"
+        },
+        {
+          "id": "62729",
+          "path": "rows/t-skpp"
+        }
+      ]
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-facebook-ads",
+      "id": "94145926",
+      "path": "extractor/keboola.ex-facebook-ads/facebook-template",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-google-adwords-reports-v201809",
+      "id": "94155653",
+      "path": "extractor/keboola.ex-google-adwords-reports-v201809/adwords-tamplate",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-google-analytics-v4",
+      "id": "94161055",
+      "path": "extractor/keboola.ex-google-analytics-v4/google-analytics-template",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-google-drive",
+      "id": "95168215",
+      "path": "extractor/keboola.ex-google-drive/google-drives",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.ex-sklik",
+      "id": "7939753",
+      "path": "extractor/keboola.ex-sklik/my-sklik-data-source",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "keboola.snowflake-transformation",
+      "id": "7945217",
+      "path": "transformation/keboola.snowflake-transformation/l-00-marketing-systems",
+      "rows": []
+    },
+    {
+      "branchId": 8887,
+      "componentId": "revolt-bi.ex-adform-dsp",
+      "id": "94174302",
+      "path": "extractor/revolt-bi.ex-adform-dsp/test",
+      "rows": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "dateTo": "now",
+    "advOrPub": "advertiser",
+    "dateFrom": "6 days ago",
+    "entityId": [
+      "3600617",
+      "4602889"
+    ],
+    "#apiToken": "KBC::ProjectSecure::DOPLNIT",
+    "incremental": true,
+    "recordsQuery": "commissionId orderId clickReferringURL websiteName websiteId clickDate postingDate advertiserName cjFeeAdvCurrency advCommissionAmountAdvCurrency pubCommissionAmountUsd pubCommissionAmountPubCurrency items {commissionItemId  totalCommissionAdvCurrency quantity perItemSaleAmountAdvCurrency}"
+  }
+}

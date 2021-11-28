@@ -1,0 +1,65 @@
+{
+  "parameters": {
+    "accounts": {
+      "act_124024450": {
+        "account_id": "124024450",
+        "id": "act_124024450",
+        "business_name": "TPF group s.r.o.",
+        "name": "Slevoking (124024450)",
+        "currency": "CZK"
+      }
+    },
+    "api-version": "v5.0",
+    "queries": [
+      {
+        "id": 10409,
+        "type": "nested-query",
+        "name": "campaigns",
+        "query": {
+          "path": "campaigns",
+          "fields": "id,name,account_id",
+          "ids": "act_124024450",
+          "limit": "100"
+        }
+      },
+      {
+        "id": 10802,
+        "type": "nested-query",
+        "name": "ads",
+        "query": {
+          "path": "ads",
+          "fields": "id,name,adset_id,targeting{geo_locations{countries}}",
+          "ids": "act_124024450",
+          "limit": "100"
+        }
+      },
+      {
+        "id": 49630,
+        "type": "nested-query",
+        "name": "adsets",
+        "query": {
+          "path": "adsets",
+          "fields": "id,name,campaign_id",
+          "ids": "act_124024450",
+          "limit": "100"
+        }
+      },
+      {
+        "id": 46942,
+        "type": "nested-query",
+        "name": "ads_insights",
+        "query": {
+          "path": "ads",
+          "fields": "insights.action_breakdowns(action_type).date_preset(this_year).time_increment(1){ad_id,impressions,reach,inline_link_clicks,spend},adcreatives{id,object_story_spec{page_id,link_data{link}},url_tags}",
+          "ids": "act_124024450",
+          "limit": "100"
+        }
+      }
+    ]
+  },
+  "authorization": {
+    "oauth_api": {
+      "version": 3
+    }
+  }
+}

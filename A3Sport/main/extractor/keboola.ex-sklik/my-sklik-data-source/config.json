@@ -1,0 +1,17 @@
+{
+    "parameters": {
+      "#token": "KBC::ProjectSecure::eJwBhwF4/mE6Mjp7aTowO3M6MTc1OiLe9QIAwS3reEw/TTVCVRP4/FPW0e6ukJ1GYmLGWNI+JyrW0lEgZ0C47o5DPrOJVgSnfgSuAUk+3WXq5EMqlAasRmMf9FFdU6LbKKZM/OAMrWvSvOyYI0d1vAbqR4GmDW383pEQ/7Erv36agTbOuRR28CIsULnMGEZAubBaBbggAAfRhrzoK1xuVMOQ15QhvhwWJzH9VvncP2QS2Q0PsKaO6dXXpva4udYxoDuXjitjIjtpOjE7czoxODQ6IgECAwB4JwpmrwnvHMi+H9vY2cAWNETT0g4aeesZMXO1knqiH84BuWXyoSQeuRyVVLcJohGu2AAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDPHrHQuo+VcY0x8xwQIBEIA7xMpaqBV+U/R9hRssWcL9CxZ52T4kOGYXFi5nuET+DXol1OsgpFKTbIvFDFNmXci/F21EHKV9Di6qLWUiO309zKAE",
+      "reports": [
+        {
+          "name": "campaigns",
+          "resource": "campaigns",
+          "displayColumns": "actualClicks, adSelection, automaticLocation, context, contextNetwork, createDate, deleted, deleteDate, defaultBudgetId, deviceDesktop, deviceTablet, deviceMobil, deviceOther, endDate, exhaustedTotalBudget, fulltext, id, name, paymentMethod, startDate, status, totalClicks, totalClicksFrom, type, totalBudget, budget.colorCodeId, budget.dayBudget, budget.deleted, budget.deleteDate, budget.id, budget.name, avgCpc, avgPos, clickMoney, clicks, conversions, conversionValue, impressionMoney, impressions, totalMoney, transactions, missImpressions,  exhaustedBudget, stoppedBySchedule, underForestThreshold, exhaustedBudgetShare, ctr,pno, ish, ishContext, ishSum",
+          "displayOptions": "{ \"statGranularity\": \"daily\" }",
+          "restrictionFilter": "{ \"dateFrom\": \"-6days\", \"dateTo\": \"now\" }"
+        }
+      ],
+      "accounts": "",
+      "username": "DOPLNIT",
+      "#password": "KBC::ProjectSecure::DOPLNIT"
+    }
+  }

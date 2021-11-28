@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "since": "-7 day",
+    "until": "now",
+    "bucket": "",
+    "queries": [
+      {
+        "name": "ad_groups",
+        "query": "SELECT  AdGroupId,AdGroupName,CampaignId,CampaignName,Impressions, Cost,Clicks, Date FROM ADGROUP_PERFORMANCE_REPORT",
+        "primary": [
+          "Ad_group_ID",
+          "Day"
+        ]
+      },
+      {
+        "name": "Url_adw",
+        "query": "select AdGroupId,CampaignId,Date, UnexpandedFinalUrlString from  LANDING_PAGE_REPORT",
+        "primary": [
+          "Ad_group_ID",
+          "Day"
+        ]
+      }
+    ],
+    "customerId": "375-416-4891"
+  },
+  "authorization": {
+    "oauth_api": {
+      "version": 3
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "parameters": {
+    "profiles": [
+      {
+        "accountId": "11748835",
+        "webPropertyId": "UA-11748835-3",
+        "webPropertyName": "DOPLNIT",
+        "accountName": "DOPLNIT",
+        "name": "DOPLNIT",
+        "id": "114886853"
+      },
+      {
+        "accountId": "11748835",
+        "webPropertyId": "UA-11748835-17",
+        "webPropertyName": "DOPLNIT",
+        "accountName": "DOPLNIT",
+        "name": "DOPLNIT",
+        "id": "140893243"
+      },
+      {
+        "accountId": "11748835",
+        "webPropertyId": "UA-11748835-19",
+        "webPropertyName": "DOPLNIT",
+        "accountName": "DOPLNIT",
+        "name": "DOPLNIT",
+        "id": "111389025"
+      }
+    ],
+    "outputBucket": "in.c-keboola-ex-google-analytics-v4-94161055",
+    "queries": [
+      {
+        "name": "ga-sessions",
+        "enabled": true,
+        "outputTable": "ga-sessions",
+        "endpoint": "reports",
+        "query": {
+          "dateRanges": [
+            {
+              "startDate": "-7 days",
+              "endDate": "now"
+            }
+          ],
+          "viewId": "",
+          "metrics": [
+            {
+              "expression": "ga:sessions"
+            },
+            {
+              "expression": "ga:pageviews"
+            },
+            {
+              "expression": "ga:bounces"
+            }
+          ],
+          "dimensions": [
+            {
+              "name": "ga:date"
+            },
+            {
+              "name": "ga:source"
+            },
+            {
+              "name": "ga:medium"
+            },
+            {
+              "name": "ga:campaign"
+            },
+            {
+              "name": "ga:hostname"
+            },
+            {
+              "name": "ga:dimension15"
+            },
+            {
+              "name": "ga:clientId"
+            },
+            {
+              "name": "ga:channelGrouping"
+            }
+          ]
+        },
+        "antisampling": "dailyWalk",
+        "id": 6284
+      },
+      {
+        "name": "ga-transactions",
+        "enabled": true,
+        "outputTable": "ga-transactions",
+        "endpoint": "reports",
+        "query": {
+          "dateRanges": [
+            {
+              "startDate": "-7 days",
+              "endDate": "now"
+            }
+          ],
+          "viewId": "",
+          "metrics": [
+            {
+              "expression": "ga:itemQuantity"
+            },
+            {
+              "expression": "ga:goal1Completions"
+            },
+            {
+              "expression": "ga:goal1Value"
+            },
+            {
+              "expression": "ga:goal2Completions"
+            },
+            {
+              "expression": "ga:goal2Value"
+            },
+            {
+              "expression": "ga:goal5Completions"
+            },
+            {
+              "expression": "ga:goal5Value"
+            },
+            {
+              "expression": "ga:transactionRevenue"
+            }
+          ],
+          "dimensions": [
+            {
+              "name": "ga:date"
+            },
+            {
+              "name": "ga:transactionId"
+            },
+            {
+              "name": "ga:source"
+            },
+            {
+              "name": "ga:medium"
+            },
+            {
+              "name": "ga:campaign"
+            },
+            {
+              "name": "ga:hostname"
+            },
+            {
+              "name": "ga:dimension15"
+            },
+            {
+              "name": "ga:clientId"
+            }
+          ]
+        },
+        "antisampling": "dailyWalk",
+        "id": 22437
+      },
+      {
+        "name": "ga_sessions_agr",
+        "enabled": true,
+        "outputTable": "ga-sessions-agr",
+        "endpoint": "reports",
+        "query": {
+          "dateRanges": [
+            {
+              "startDate": "-6 days",
+              "endDate": "now"
+            }
+          ],
+          "viewId": "",
+          "metrics": [
+            {
+              "expression": "ga:sessions"
+            },
+            {
+              "expression": "ga:pageviews"
+            },
+            {
+              "expression": "ga:bounces"
+            }
+          ],
+          "dimensions": [
+            {
+              "name": "ga:date"
+            },
+            {
+              "name": "ga:source"
+            },
+            {
+              "name": "ga:medium"
+            },
+            {
+              "name": "ga:campaign"
+            },
+            {
+              "name": "ga:hostname"
+            },
+            {
+              "name": "ga:channelGrouping"
+            },
+            {
+              "name": "ga:clientId"
+            }
+          ],
+          "filtersExpression": ""
+        },
+        "antisampling": "dailyWalk",
+        "id": 22879
+      },
+      {
+        "name": "ga_transactions_agr",
+        "enabled": true,
+        "outputTable": "ga-transactions-agr",
+        "endpoint": "reports",
+        "query": {
+          "dateRanges": [
+            {
+              "startDate": "-6days",
+              "endDate": "now"
+            }
+          ],
+          "viewId": "",
+          "metrics": [
+            {
+              "expression": "ga:itemQuantity"
+            },
+            {
+              "expression": "ga:goal1Completions"
+            },
+            {
+              "expression": "ga:goal1Value"
+            },
+            {
+              "expression": "ga:goal2Completions"
+            },
+            {
+              "expression": "ga:goal2Value"
+            },
+            {
+              "expression": "ga:goal5Completions"
+            },
+            {
+              "expression": "ga:goal5Value"
+            },
+            {
+              "expression": "ga:transactionRevenue"
+            }
+          ],
+          "dimensions": [
+            {
+              "name": "ga:date"
+            },
+            {
+              "name": "ga:source"
+            },
+            {
+              "name": "ga:medium"
+            },
+            {
+              "name": "ga:campaign"
+            },
+            {
+              "name": "ga:hostname"
+            },
+            {
+              "name": "ga:clientId"
+            },
+            {
+              "name": "ga:transactionId"
+            }
+          ]
+        },
+        "antisampling": "dailyWalk",
+        "id": 91808
+      }
+    ]
+  },
+  "authorization": {
+    "oauth_api": {
+      "version": 3
+    }
+  }
+}

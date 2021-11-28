@@ -1,0 +1,94 @@
+{
+  "parameters": {
+    "sheets": [
+      {
+        "fileId": "16OgBt76gYAo9P1OzwW_rkG3_n4EuSBPPpvjNxsC51-8",
+        "fileTitle": "Marketing_template_documentation",
+        "sheetId": 1616102903,
+        "sheetTitle": "segments_setting",
+        "id": 73278,
+        "enabled": true,
+        "header": {
+          "rows": 1
+        },
+        "outputTable": "segments-setting"
+      },
+      {
+        "fileId": "16OgBt76gYAo9P1OzwW_rkG3_n4EuSBPPpvjNxsC51-8",
+        "fileTitle": "Marketing_template_segments",
+        "sheetId": 0,
+        "sheetTitle": "Customer_segments",
+        "id": 55464,
+        "enabled": true,
+        "header": {
+          "rows": 1
+        },
+        "outputTable": "customer-segments"
+      },
+      {
+        "fileId": "1-MXoLd08YMzU3-IogW6CR5YMfJAaZUMAAtn6XNjfKVQ",
+        "fileTitle": "Metodika UTM - Template",
+        "sheetId": 317276490,
+        "sheetTitle": "Grouping",
+        "id": 93584,
+        "enabled": true,
+        "header": {
+          "rows": 1
+        },
+        "outputTable": "utm-grouping"
+      }
+    ],
+    "outputBucket": "in.c-keboola-ex-google-drive-95168215"
+  },
+  "processors": {
+    "after": [
+      {
+        "definition": {
+          "component": "keboola.processor.transpose"
+        },
+        "parameters": {
+          "filename": "16OgBt76gYAo9P1OzwW_rkG3_n4EuSBPPpvjNxsC51-8_1616102903.csv",
+          "transpose": false,
+          "header_rows_count": 1,
+          "header_column_names": null,
+          "header_transpose_row": 0,
+          "header_transpose_column_name": "",
+          "transpose_from_column": 0
+        }
+      },
+      {
+        "definition": {
+          "component": "keboola.processor.transpose"
+        },
+        "parameters": {
+          "filename": "16OgBt76gYAo9P1OzwW_rkG3_n4EuSBPPpvjNxsC51-8_0.csv",
+          "transpose": false,
+          "header_rows_count": 1,
+          "header_column_names": null,
+          "header_transpose_row": 0,
+          "header_transpose_column_name": "",
+          "transpose_from_column": 0
+        }
+      },
+      {
+        "definition": {
+          "component": "keboola.processor.transpose"
+        },
+        "parameters": {
+          "filename": "1-MXoLd08YMzU3-IogW6CR5YMfJAaZUMAAtn6XNjfKVQ_317276490.csv",
+          "transpose": false,
+          "header_rows_count": 1,
+          "header_column_names": null,
+          "header_transpose_row": 0,
+          "header_transpose_column_name": "",
+          "transpose_from_column": 0
+        }
+      }
+    ]
+  },
+  "authorization": {
+    "oauth_api": {
+      "version": 3
+    }
+  }
+}
